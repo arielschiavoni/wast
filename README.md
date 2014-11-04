@@ -1,0 +1,4 @@
+wast
+====
+
+Web Application Store
