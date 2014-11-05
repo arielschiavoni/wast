@@ -1,0 +1,16 @@
+systemLog:
+  destination: file
+  path: "/var/log/mongodb/mongodb.log"
+  logAppend: true
+storage:
+  dbPath: "/data/db"
+  smallFiles: true
+  journal:
+    enabled: true
+net:
+  unixDomainSocket:
+    enabled: true
+    pathPrefix: "/data"
+  http:
+    enabled: true
+    RESTInterfaceEnabled: true
