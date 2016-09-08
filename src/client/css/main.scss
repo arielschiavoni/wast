@@ -1,0 +1,45 @@
+//EXTERNAL DEPENDENCIES
+// -------------------------
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+
+// THEME
+// -------------------------
+//this variables should be included before libs, it includes boots
+@import "theme/variables.scss";
+@import "theme/texture.scss";
+@import "theme/colour.scss";
+
+// LIBS
+// -------------------------
+@import "libs/bootstrap/bootstrap-awesome.scss";
+@import "libs/bootstrap/responsive.scss";
+@import "libs/semantic.gs/grid.scss";
+
+// BASE CSS
+// -------------------------
+@import "base/mixins.scss";
+@import "base/icons.scss";
+@import "base/typography.scss";
+
+
+// COMPONENTS
+// -------------------------
+@import "components/_layout.scss";
+@import "components/_navbar.scss";
+@import "components/_carousel.scss";
+@import "components/_application.scss";
+@import "components/_application-image.scss";
+@import "components/_loading-indicator.scss";
+@import "components/_loading-indicator.scss";
+@import "components/_accordion.scss";
+@import "components/_ribbon.scss";
+@import "components/_navs.scss";
+@import "components/_review.scss";
+@import "components/_button-groups.scss";
+@import "components/_progress-bars.scss";
+@import "components/_forms.scss";
+@import "components/_notify.scss";
+@import "components/_modals.scss";
+
+

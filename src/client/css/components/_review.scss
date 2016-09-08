@@ -1,0 +1,57 @@
+
+/*reviews used in app details */
+.review.one {
+	padding: 10px 0;
+	border-bottom: dashed 2px #ddd;
+	@include clearfix();
+
+	.avatar {
+	  float: left;
+	  margin: 0;
+	  padding: 0;
+	  vertical-align: top;
+		width: 20%;
+		text-align: center;
+	}
+
+	.avatar img {
+	  border-radius: 50%;
+	  border: solid 3px #bec5cc;
+	  vertical-align: middle;
+	}
+
+	.review {
+	  float: left;
+	  padding: 0 10px 0 20px;
+	  width: calc(80% - 30px);
+
+	  .description,
+		.publish-date,
+		.stars{
+		  padding: 0;
+		  margin: 5px 10px 0 0px;
+		  text-align: left;
+		}
+
+		.description {
+		  color: #2c2f33;
+		  font-size: 80%;
+		  margin-top: 10px;
+		}
+
+		.publish-date {
+			font-size: 70%;
+		}
+
+		.author {
+			font-size: 90%;
+			font-weight: bold;
+			color: #66b500;
+		  text-decoration: none;
+		}
+
+	}
+
+}
+
+

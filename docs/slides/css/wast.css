@@ -1,0 +1,265 @@
+
+/*impress customizations*/
+.step:not(.active).invisible {
+  opacity: 0;
+}
+.step {
+  color: rgb(102, 102, 102);
+  text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: -1px;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+
+/*slides*/
+#intro-1 h1 {
+	font-size: 35px;
+	text-align: center;
+	margin-top: 50px;
+	line-height: 70px;
+	color: black;
+}
+
+#intro-1 .author {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+}
+
+#intro-1 p {
+	font-size: 22px;
+}
+
+#intro-1 .logo{
+	text-align: center;
+}
+#intro-1 .logo p{
+  font-size: 14px;
+  line-height: 14px;
+}
+
+#intro-1 .devices{
+	position: absolute;
+	top: 200px;
+	left: 60px;
+	width: 500px;
+	opacity: 0.04;
+}
+
+.intro-2 h1 {
+	font-size: 35px;
+	text-shadow: 1px 1px 2px black;
+}
+
+.option-list {
+	border-left: 10px solid #b2d600;
+	margin: 10px 0 0 50px;
+	padding: 35px 0 20px 25px;
+	font-size: 30px;
+}
+
+.option-list li {
+	list-style: none;
+	margin-left: 40px;
+	margin-bottom: 60px;
+	position: relative;
+}
+
+.option-list li:last-child {
+  text-shadow: 1px 1px 2px black;
+}
+
+.option-list li span:first-child {
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	background-color: #e5ebe6;
+	border: 10px solid #b2d600;
+	height: 70px;
+	left: -117px;
+	line-height: 70px;
+	position: absolute;
+	text-align: center;
+	top: -10px;
+	width: 70px;
+}
+
+.option-list.two li span:first-child {
+  height: 30px;
+  width: 30px;
+  left: -98px;
+  line-height: 30px;
+  top: -10px;
+}
+
+.option-list li span:not(:first-child) {
+	color: grey;
+	display: block;
+	font-size: 80%;
+	font-style: italic;
+}
+
+.option-list.three {
+  border-left: none;
+  margin: 5px 0 0 10px;
+  padding: 0px 0 5px 5px;
+  font-size: 18px;
+}
+
+.option-list.three li {
+  list-style: disc;
+  margin-left: 5px;
+  margin-bottom: 0;
+  margin-top: 0;
+  line-height: 30px;
+}
+
+.option-list.three li:last-child {
+  text-shadow: none;
+}
+
+/*//html5*/
+.option-list.four {
+  border-left: 5px solid #f14a29;
+  font-size: 24px;
+  padding-top: 5px;
+  margin: -7px 0 0 32px;
+}
+
+.option-list.four li{
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.option-list li span:not(:first-child) {
+  color: grey;
+  display: block;
+  font-size: 80%;
+  text-shadow: none;
+  font-style: normal;
+}
+
+
+.option-list.four li img:first-child {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 5px solid #f14a29;
+  background-color: #d9d9d9;
+  height: 40px;
+  left: -75px;
+  position: absolute;
+  text-align: center;
+  top: 10px;
+  width: 40px;
+}
+
+/*#intro-2 h1 {
+	text-transform: lowercase;
+	color: transparent;
+	text-shadow: 2px 2px 10px rgba(50,50,50,.8);
+	position: absolute;
+	-webkit-transform-origin: 100% 100%;
+	-webkit-transform: translate(-110%, -120%) rotate(-90deg);
+	font-size: 2.5em;
+}*/
+
+.image-container {
+  text-align: center;
+}
+
+img.rounded {
+  border-radius: 30px;
+  box-shadow: 0 0 100px black;
+  margin-top: 50px;
+}
+
+.step.two h1{
+  font-size: 35px;
+  text-align: center;
+}
+
+.footnote {
+  font-size: 24px;
+}
+
+.image-container-two {
+  padding-top: 25px;
+}
+
+.image-container-two img{
+  width: 200px;
+  display: inline-block;
+}
+
+.image-container-two img:last-child{
+  margin-left: 370px;
+}
+
+.separator {
+  margin: 10px 0;
+  height: 7px;
+  background-image: -webkit-linear-gradient(left, #fff, #000);
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+
+}
+
+.shadowed {
+  box-shadow: 0px 5px 12px black;
+}
+
+table.comparation td{
+  font-size: 14px;
+  padding: 0 10px;
+  border-left: solid 1px;
+  border-right: solid 1px;
+  border-bottom: solid 1px;
+  text-align: center;
+}
+
+table.comparation tr:nth-child(2n){
+  background: #e5ebe6;
+}
+
+table.comparation th{
+  font-size: 22px;
+  text-shadow: 1px 1px 2px black;
+  text-align: center;
+  border-bottom: solid 1px;
+}
+table.comparation th:first-child{
+  width: 160px;
+  text-shadow: 1px 1px 2px black;
+}
+table.comparation td:first-child{
+  text-shadow: 1px 1px 2px black;
+}
+
+img.adaptive {
+  position: absolute;
+  top: 0px;
+  left: 320px;
+  opacity: 0.7;
+  z-index: -1;
+  border-radius: 20px;
+  box-shadow: 0px -10px 10px;
+}
+
+div.code {
+  font-size:65%;
+}
+
+.question {
+  font-size: 320px;
+  text-shadow: 28px 11px 14px;
+  position: absolute;
+  left: 370px;
+  top: 280px;
+}

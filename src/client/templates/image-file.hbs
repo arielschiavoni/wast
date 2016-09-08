@@ -1,0 +1,9 @@
+<span class="help-block">Choose an image for your profile.</span>
+<div class="custom-input">
+  {{#if data}}
+    <img class="avatar" src="{{data}}">
+  {{else}}
+    <img class="avatar" src="/images/user-unknown.jpg">
+  {{/if}}
+	<input type="file" id="avatar" name="avatar" accept="image/*">
+</div>

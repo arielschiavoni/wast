@@ -1,0 +1,18 @@
+<div class="avg">
+	<label>Average</label>
+	<span class="number">{{avgRating}}</span>
+	<div class="rating">
+	  {{#each stars}}
+	    <i class="{{this}}"></i>
+	  {{/each}}
+	</div>
+	<span>{{reviews}}</span>
+</div>
+<div class="bars" id="bars-graph">
+	{{#each bars}}
+		<div class="progress three progress-warning progress-striped">
+		  <span class="status">{{stars}} stars ({{count}})</span>
+		  <div class="bar" id="bar-{{stars}}"></div>
+		</div>
+	{{/each}}
+</div>

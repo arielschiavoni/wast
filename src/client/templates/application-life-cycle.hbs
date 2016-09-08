@@ -1,0 +1,70 @@
+<p class="item">Price:
+  {{#if free}}
+    <strong>Free</strong> <i class="icon-gift" title=""></i>
+  {{else}}
+    <strong>{{price}}</strong> <i class="icon-money" title=""></i>
+  {{/if}}
+</p>
+<p class="item">Downloads: <strong>{{downloads}}</strong> <i class="icon-download-alt" title="{{downloads}} downloads"></i></p>
+<p class="item">Size:      <strong>{{size}} MB</strong></p>
+<p class="item">Reviews:   <strong>{{reviews}}</strong> <i class="icon-comments" title="{{reviews}} reviews"></i></p>
+
+{{#if listed}}
+  <a id="download" href="#" data-bypass class="btn btn-primary">
+    {{#if free}}
+      Download Free
+    {{else}}
+      Buy {{price}}
+    {{/if}}&nbsp; <i class="icon-download-alt" title=""></i></a>
+{{/if}}
+
+{{#if entitled}}
+  <a id="download" href="#" data-bypass class="btn btn-primary">Download &nbsp; <i class="icon-download-alt" title=""></i></a>
+{{/if}}
+
+{{#if paused}}
+  <div class="progress one progress-warning progress-striped">
+    <span class="status">Paused... {{progress}}%</span>
+    <div class="bar" style="width:{{progress}}%"></div>
+  </div>
+  <div class="btn-group one">
+    <button class="btn btn-inverse" id="resume">Resume</button>
+    <button class="btn btn-inverse dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#" id="cancel" data-bypass>Cancel</a></li>
+    </ul>
+  </div>
+{{/if}}
+
+{{#if processing}}
+  <div class="progress one progress-info progress-striped">
+    <span class="status">Processing... {{progress}}%</span>
+    <div class="bar" style="width:{{progress}}%"></div>
+  </div>
+{{/if}}
+
+{{#if downloading}}
+  <div class="progress one progress-success progress-striped">
+    <span class="status">Downloading... {{progress}}%</span>
+    <div class="bar" style="width:{{progress}}%"></div>
+  </div>
+  <div class="btn-group one">
+    <button class="btn btn-inverse" id="cancel">Cancel</button>
+    <button class="btn btn-inverse dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#" id="pause" data-bypass>Pause</a></li>
+    </ul>
+  </div>
+{{/if}}
+
+{{#if installing}}
+  <div class="progress one progress-danger progress-striped">
+    <span class="status">Installing... {{progress}}%</span>
+    <div class="bar" style="width:{{progress}}%"></div>
+  </div>
+{{/if}}
+
+{{#if installed}}
+  <a id="launch" href="#" data-bypass class="btn btn-primary">Launch &nbsp; <i class="icon-play" title=""></i></a>
+  <a id="write-review" href="#" data-bypass class="btn btn-primary">Write Review &nbsp; <i class="icon-comments" title=""></i></a>
+{{/if}}

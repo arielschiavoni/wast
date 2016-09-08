@@ -1,0 +1,115 @@
+
+// Active nav items
+.navbar.one {
+
+  .navbar-inner {
+
+    box-shadow: none;
+
+    .nav {
+      > .active {
+        a, a:focus, a:hover {
+          color: $navbarLinkColorActive;
+          text-decoration: none;
+          background-color: $navbarLinkBackgroundActive;
+          @include box-shadow(inset 0 12px 20px rgba(67,68,67,.125));
+        }
+      }
+      padding-top: 10px;
+    }
+
+    .logo {
+      display: inline-block;
+    }
+
+    .avatar {
+      width: 52px;
+      height: 52px;
+      display: inline-block;
+
+      img {
+        border-radius: 50%;
+        border: solid 3px #b2d600;
+        width: 46px;
+        height: 46px;
+        @include box-shadow(0px 0px 8px rgba(178, 214, 0, .8));
+      }
+    }
+
+
+    .search-box {
+      @include center-block();
+      text-align: center;
+      .search-query {
+        width: 80%;
+      }
+
+      #suggestions {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        transition: height ease 0.2s;
+        height: 0;
+        text-align: center;
+        font-size: 80%;
+        background: rgb(255, 255, 255);
+        padding: 0 10px 0 0;
+        border-radius: 5px;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 2px 8px rgba(82, 168, 236, 0.6);
+
+        li {
+          line-height: 30px;
+        }
+
+        li.active {
+          font-weight: bold;
+          color: rgba(82, 168, 236, 0.6);
+          line-height: 33px;
+          font-size: 140%;
+          cursor: pointer;
+        }
+      }
+
+    }
+
+  }
+
+  &.navbar-fixed-top {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+
+}
+
+@media (min-width: 980px) {
+  .navbar.one {
+    .navbar-inner {
+      .nav {
+        padding-top: 0px;
+      }
+
+      .search-box {
+        position: relative;
+        text-align: left;
+        .search-query {
+          width: auto;
+          text-align: right;
+        }
+        #suggestions {
+          text-align: right;
+          height: 0;
+          position: absolute;
+          width: 165px;
+          top: 30px;
+          right: 17px;
+          li.active {
+            font-size: 100%;
+          }
+        }
+      }
+    }
+
+
+  }
+}

@@ -1,0 +1,26 @@
+<form class="form-horizontal one" id="sign-in-form">
+  <div class="control-group">
+    <h4>Sign In</h4>
+    <div class="controls">
+      <input type="text" id="username" placeholder="Username or email" value="{{username}}" required>
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="controls">
+      <input type="password" id="password" placeholder="Password" required>
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="controls">
+      Don't have an account? <a href="#register">Sign up now</a>
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="controls">
+      {{#each errors}}
+        <div class="alert alert-error">{{this}}</div>
+      {{/each}}
+      <button type="submit" class="btn btn-primary" id="sign-in-button">Sign in</button>
+    </div>
+  </div>
+</form>

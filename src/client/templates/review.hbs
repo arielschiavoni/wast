@@ -1,0 +1,17 @@
+<figure class="avatar">
+  {{#if avatar}}
+    <img src="{{avatar}}" alt="{{author}}">
+  {{else}}
+    <img src="/images/user-unknown.jpg" width="96" height="96">
+  {{/if}}
+</figure>
+<div class="review">
+  <a href="#" class="author">{{author}}</a>
+  <p class="description">{{comment}}</p>
+  <p class="stars">
+    {{#each stars}}
+      <i class="{{this}}"></i>
+    {{/each}}
+  </p>
+  <p class="publish-date">Date:  <time datetime="{{date}}" pubdate>{{date}}</time></p>
+</div>

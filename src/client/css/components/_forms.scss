@@ -1,0 +1,157 @@
+
+//form used for login
+.form-horizontal.one, .form-horizontal.two {
+
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  border: solid 1px $tableBorder;
+
+
+	// Set font for forms
+	label,
+	input,
+	button,
+	select,
+	textarea {
+	  font-size: $baseFontSize * 0.9;
+	}
+	// Form controls
+	// -------------------------
+
+	// Shared size and type resets
+	select,
+	textarea,
+	input[type="text"],
+	input[type="password"],
+	input[type="datetime"],
+	input[type="datetime-local"],
+	input[type="date"],
+	input[type="month"],
+	input[type="time"],
+	input[type="week"],
+	input[type="number"],
+	input[type="email"],
+	input[type="url"],
+	input[type="search"],
+	input[type="tel"],
+	input[type="color"],
+	.uneditable-input {
+	  font-size: $baseFontSize * 0.9;
+    width: 170px;
+	}
+
+  .controls {
+    margin-left: 0;
+    font-size: 80%;
+  }
+
+  .control-label {
+    text-align: center;
+  }
+
+  .alert-error {
+    font-size: 90%;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  h4 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    background-color: #f5f5f5;
+  }
+
+
+  input[type="file"] {
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    cursor: pointer;
+    font-size: 35px !important;
+  }
+
+  .custom-input {
+    width: 112px;
+    height: 112px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    margin-top: 10px;
+    line-height: 112px;
+  }
+
+  .avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    border: solid 3px #bec5cc;
+    vertical-align: middle;
+    box-shadow: 0px -3px 5px rgba(0,0,0,0.7);
+  }
+
+}
+
+.form-horizontal.two {
+  border: none;
+}
+
+form.three {
+  label, textarea{
+    font-size: 90%;
+  }
+  textarea {
+    width: 90%;
+  }
+  .stars {
+    @include stars(50px);
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+
+}
+
+@media (min-width: 420px) {
+  .form-horizontal.one, .form-horizontal.two {
+    select,
+    textarea,
+    input[type="text"],
+    input[type="password"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="date"],
+    input[type="month"],
+    input[type="time"],
+    input[type="week"],
+    input[type="number"],
+    input[type="email"],
+    input[type="url"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="color"],
+    .uneditable-input {
+      width: 210px;
+    }
+  }
+}
+
+
+@media (min-width: 767px) {
+  .form-horizontal.one {
+    width: 50%;
+  }
+}
+
+@media (min-width: 980px) {
+  .form-horizontal.one {
+    width: 30%;
+  }
+}

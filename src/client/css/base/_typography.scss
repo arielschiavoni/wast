@@ -1,0 +1,21 @@
+//
+// Typography 
+// Extends the typo component from bootstrap
+// --------------------------------------------------
+
+
+// TYPOGRAPHY MIXINS
+
+// Typo hierarchy constructor
+@mixin hX ($f: 1) {
+  font-size: $baseFontSize * $f;
+  line-height: $baseLineHeight * 2;
+}
+
+// Hierarchy implementation
+.h1 { @include hX(2.75); } // ~38px
+.h2 { @include hX(2.25); } // ~32px
+.h3 { @include hX(1.75); } // ~24px
+.h4 { @include hX(1.25); } // ~18px
+.h5 { @include hX(1); }
+.h6 { @include hX(0.85); } // ~12px

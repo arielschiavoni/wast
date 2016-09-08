@@ -1,0 +1,17 @@
+//thumbnail.one: used with screenshots in details;
+
+
+.application-image {
+	max-width: 640px;
+	@include column(12);
+	margin: 20px auto;
+
+	ul {
+		margin: 0;
+	}
+
+	li {
+		@include column(4);
+	}
+}
+

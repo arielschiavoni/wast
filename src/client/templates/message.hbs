@@ -1,0 +1,11 @@
+<div class="alert {{type}}">
+  {{#if numFound}}
+    We have found <strong>{{numFound}}</strong> results for <strong>{{q}}</strong>.
+  {{else}}
+    {{#if init}}
+      We are looking...
+    {{else}}
+      Sorry we haven't found results for <strong>{{q}}</strong>.
+    {{/if}}
+  {{/if}}
+</div>

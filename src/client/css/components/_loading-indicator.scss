@@ -1,0 +1,56 @@
+.circle {
+  background-color: rgba(0,0,0,0);
+  border: 5px solid $loadingIndicatorBorderColor;
+  opacity: .9;
+  border-right: 5px solid rgba(0,0,0,0);
+  border-left: 5px solid rgba(0,0,0,0);
+  margin: 0 auto;
+
+  @include border-radius(50px);
+
+  &.outter {
+    width: 50px;
+    height: 50px;
+    @include animation(spinPulse 1s infinite ease-in-out);
+    @include box-shadow(0 0 35px $loadingIndicatorShadow);
+
+  }
+
+  &.inner {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: -50px;
+    @include box-shadow(0 0 15px $loadingIndicatorShadow);
+    @include animation(spinoffPulse 1s infinite linear);
+  }
+
+}
+
+
+//spinPulse animation
+@include keyframes(spinPulse) {
+  0% {
+    @include rotate(160deg);
+    opacity: 0;
+    @include box-shadow(0 0 1px $loadingIndicatorShadow);
+  }
+  50% {
+    @include rotate(145deg);
+    opacity: 1;
+  }
+  100% {
+    @include rotate(-320deg);
+    opacity:0;
+  }
+}
+
+//spinoffPulse animation
+@include keyframes(spinoffPulse) {
+  0% {
+    @include rotate(0deg);
+  }
+  100% {
+    @include rotate(360deg);
+  }
+}

@@ -1,0 +1,24 @@
+//.tabbable.one is used in application details tabs
+
+.tabbable.one {
+
+	.nav.nav-tabs {
+		margin-bottom: 0px;
+
+		> .active {
+			> a, 
+			a:hover {
+				background-color: $bodyBackground;
+			  border: 1px solid #ddd;
+			  border-bottom-color: transparent;
+			  cursor: default;
+			}
+		}
+
+	}
+
+	.tab-content {
+		padding-top: 20px;
+	}	
+
+}

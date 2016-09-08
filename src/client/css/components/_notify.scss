@@ -1,0 +1,41 @@
+
+.notify.one {
+	position: fixed;
+  bottom: -35px;
+  right: 20px;
+	left: 10px;
+	@include transition(bottom 0.5s ease-out);
+  @include border-top-left-radius(50px);
+  @include border-top-right-radius(10px);
+  @include box-shadow(inset -4px 6px 15px rgba(0,0,0,0.3));
+	color:black;
+	padding: 20px 20px 5px 50px;
+
+  .notification {
+    font-size: 120%;
+    font-weight: bold;
+  }
+  .close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 280%;
+  }
+
+	&.info {
+    @include gradient-vertical(#e5ebe6, rgba(51,155,185,0.85));
+	}
+
+	&.success {
+    @include gradient-vertical(#e5ebe6, rgba(98,196,98,0.85));
+	}
+
+	&.warning {
+    @include gradient-vertical(#e5ebe6, rgba(251,180,80,0.85));
+	}
+
+	&.danger {
+    @include gradient-vertical(#e5ebe6, rgba(238,95,91,0.85));
+	}
+
+}

@@ -1,0 +1,14 @@
+//.accordion.one is used in application details
+.accordion.one {
+
+  .accordion-heading {
+    background: $grayLighter;
+    @include border-radius(4px);
+
+    .accordion-toggle {
+      text-decoration: none;
+    }
+    font-size: 120%;
+  }
+
+}

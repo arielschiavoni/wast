@@ -1,0 +1,23 @@
+// Base icon constructor
+@mixin base-icon($w: 1em, $h: 1em) {
+  width: $w;
+  height: $h;
+  display: inline-block;
+}
+
+// BASE ICON + HOVER
+@mixin base-state-icon ($w: 1em, $h: 1em) {
+  @include base-icon($w, $h);
+  &:hover {
+      background-position: 0 100%;
+  }
+  &.selected {
+      background-position: 0 100%;
+  }
+}
+
+// Icon definitions
+// .icon-a {
+//  .base-state-icon(3.3em, 1.66em);
+//   background-image: url("../images/a.png");
+// }

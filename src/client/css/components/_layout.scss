@@ -1,0 +1,94 @@
+
+/*
+Fix to solve corner case:
+In JS I am testing mq before the page is fully rendered so for a particular mq I can apply a best suited template.
+The problem is that when the page is fully rendered it adds the vertical scrollbar and
+the previous mq doesn't match anymore giving and inconsisten behavior between the template
+applied by JS and the style finally applied by the css mq.
+Reverted fix.
+This code generates laggy scroll on touch devices.
+;
+*/
+
+/*
+html {
+   overflow:hidden;
+   height:100%;
+}
+
+body {
+   position:relative;
+   overflow-y:scroll;
+   height:100%;
+}
+*/
+
+/*end*/
+
+pre {
+  margin: 20px 0;
+  font-family: $baseFontFamily;
+  font-size: $baseFontSize;
+  line-height: $baseLineHeight;
+  color: $textColor;
+  background-color: $bodyBackground;
+}
+
+.container-fluid {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.row-fluid {
+	margin-left: 0;
+	width: auto;
+	&.layout {
+		padding: 0 10px;
+	}
+}
+
+@media (max-width: 767px) {
+  /*Remove default padding.*/
+  body {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+}
+
+@media (min-width: 980px) {
+
+	.row-fluid.layout {
+		margin-top: $navbarHeight + 20px;
+	}
+
+}
+
+@media (min-width: 1200px) {
+  .row-fluid.layout {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+
+.top-applications {
+  header {
+    padding: 10px 20px;
+    margin: 20px 0 20px 0;
+    text-align: center;
+    @include border-top-left-radius(80px);
+    @include border-top-right-radius(80px);
+    background-image: linear-gradient(to bottom, #fff, #e5ebe6);
+    @include box-shadow(0 -8px 13px rgba(0, 0, 0, 0.2));
+
+    h2 {
+      text-shadow: 1px 1px 2px black;
+      cursor: pointer;
+    }
+  }
+}
+
+

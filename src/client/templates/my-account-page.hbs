@@ -1,0 +1,37 @@
+<form class="form-horizontal one" id="my-account-form">
+  <div class="control-group">
+    <h4>My Account</h4>
+    <div class="controls">
+      <input type="text" id="username" placeholder="Username" value="{{username}}" disabled>
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="controls">
+      <input type="email" id="email" placeholder="Email" value="{{email}}" disabled>
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="controls">
+      <input type="tel" id="tel" placeholder="Phone number" value="{{tel}}">
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="controls">
+      <input type="text" id="billing-address" placeholder="Billing Address" value="{{billingAddress}}">
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="controls" id="image-file">
+
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="controls">
+      {{#each errors}}
+        <div class="alert alert-error">{{this}}</div>
+      {{/each}}
+      <button type="submit" class="btn btn-primary" id="update-button">Update</button>
+    </div>
+  </div>
+
+</form>

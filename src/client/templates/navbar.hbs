@@ -1,0 +1,37 @@
+<div class="pull-left">
+    <a href="#" class="logo"><img src="/images/logo_small_2.png"></a>
+    {{#if authenticated}}
+      <a class="avatar" href="#my-account" title="My Account">
+        {{#if useravatar}}
+          <img src="{{useravatar}}">
+        {{else}}
+          <img src="/images/user-unknown.jpg">
+        {{/if}}
+      </a>
+    {{/if}}
+</div>
+
+{{#if authenticated}}
+  <a class="btn btn-navbar" href="#logout" id="logout" title="Logout"><i class="icon-signout"></i></a>
+{{else}}
+  <a class="btn btn-navbar" href="#login"><i class="icon-signin"></i></a>
+{{/if}}
+<a class="btn btn-navbar" data-toggle="collapse" data-target="#menu" data-bypass title="Menu"><i class="icon-reorder"></i></a>
+<a class="btn btn-navbar" data-toggle="collapse" data-target="#search" data-bypass title="Search"><i class="icon-search"></i></a>
+
+<div id="search" class="nav-collapse collapse">
+
+</div>
+
+<div id="menu" class="nav-collapse collapse">
+  <ul class="nav pull-right">
+    <li class="active" id="home"><a href="#"><i class="icon-home"></i>Home</a></li>
+    <li id="top-apps"><a href="#top-apps"><i class="icon-trophy"></i>Top Apps</a></li>
+    {{#if authenticated}}
+      <li id="my-apps"><a href="#my-apps"><i class="icon-th-large"></i>My Apps</a></li>
+      <li><a href="#" data-bypass id="logout"><i class="icon-signout"></i>Logout</a></li>
+    {{else}}
+      <li id="login"><a href="#login"><i class="icon-user"></i>Login</a></li>
+    {{/if}}
+  </ul>
+</div>

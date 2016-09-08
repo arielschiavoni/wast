@@ -1,0 +1,21 @@
+
+.ribbon {
+	position: absolute;
+	right: -5px;
+	padding: 5px 10px;
+	background-color: $black;
+	@include box-shadow(0 0 15px $grayLighter);
+	font-size: 70%;
+	color: $white;
+	
+	&:before {
+		content: ' ';
+		position: absolute;
+		right: -10px;
+		bottom: -10px;
+		border-width: 10px 10px;
+		border-style: solid;
+		border-color: transparent transparent transparent $black;
+
+	};
+}
